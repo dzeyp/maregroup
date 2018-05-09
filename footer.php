@@ -13,7 +13,7 @@
 				<div class="row limit">
 					<div class="col-12">
 						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/anchor.png">
-						<p>905 Prime Tower, Business Bay<br>Dubai, United Arab Emirates, PO Box 414195<br><br>+971 50 937 0380<br>info@mare.group</p>
+						<p><i class="fas fa-map-marker-alt"></i> 905 Prime Tower, Business Bay<br>Dubai, United Arab Emirates, PO Box 414195<br><br><i class="fas fa-phone"></i> +971 50 937 0380<br><i class="fas fa-envelope"></i> info@mare.group</p>
 					</div>
 				</div>
 			</div>

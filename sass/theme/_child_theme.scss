@@ -24,7 +24,7 @@ ul {
 
 .container-fluid {
 	.limit {
-		max-width: 1024px;
+		max-width: 1140px;
 		margin: 0 auto;
 	}
 }
@@ -50,6 +50,39 @@ ul {
 				text-decoration: none;
 			}
 		}
+	}
+}
+
+.main-nav-mobile {
+	background-color: #093341;
+	color: #DCBA95;
+	padding: 10px 0;
+
+	ul {
+		padding: 10px 0;
+		list-style-type: none;
+
+		li {
+			padding: 10px 0;
+
+			a {
+				color: #DCBA95;
+				padding: 20px;
+			}
+
+			a:hover {
+				text-decoration: none;
+			}
+		}
+	}
+
+	i {
+		font-size: 30px;
+		padding: 10px;
+	}
+
+	h1 {
+		font-size: 20px;
 	}
 }
 
@@ -130,10 +163,16 @@ ul {
 .post-footer {
 	height: 50vh;
 	background-color: #f9e3d6;
-	background-position: center;
+	background-position: center -10vh;
 	background-repeat: no-repeat;
 }
 
+
+
 .alt-bg {
 	background-color: #F9E3D6;
+}
+
+.no-padding {
+	
 }

@@ -64,7 +64,7 @@ get_header(); ?>
 			</div>
 		</div>
 
-		<div class="row content-alt">
+		<div class="row content-alt" id="about">
 			<div class="col-12 top text-center">
 				<div class="row limit">
 					<div class="col-12">

@@ -25,7 +25,15 @@
 	</div>
 </div><!-- #page we need this extra closing tag here -->
 
+<div class="goto-top">
+	<a data-scroll href="#home"><i class="fas fa-arrow-up"></i></a>
+</div>
+
 <?php wp_footer(); ?>
+
+<script>
+	var scroll = new SmoothScroll('a[href*="#"]');
+</script>
 
 </body>
 

@@ -22,20 +22,21 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<link href="https://fonts.googleapis.com/css?family=Merriweather:400,700|Oswald:600" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+	<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/smooth-scroll/dist/js/smooth-scroll.js"></script>
 	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
 
 <div class="hfeed site" id="page">
-	<div class="container-fluid">
+	<div class="container-fluid" id="home">
 		<div class="row main-nav d-none d-md-block">
 			<div class="col-12">
 				<div class="row limit">
 					<div class="col-5 text-right">
 						<ul>
 							<li><a href="">HOME</a></li>
-							<li><a href="">ABOUT US</a></li>
+							<li><a data-scroll href="#about">ABOUT US</a></li>
 						</ul>
 					</div>
 					<div class="col-2 text-center">
@@ -61,7 +62,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<div class="col-12 text-center collapse" id="mobile-menu"">
 				<ul>
 					<li><a href="">HOME</a></li>
-					<li><a href="">ABOUT US</a></li>
+					<li><a data-scroll href="#about">ABOUT US</a></li>
 					<li><a href="">OUR SERVICES</a></li>
 					<li><a href="">CONTACT US</a></li>
 				</ul>

@@ -10803,9 +10803,12 @@ ul {
       display: inline; }
       .main-nav ul li a {
         color: #DCBA95;
-        padding: 20px; }
+        padding: 20px;
+        -webkit-transition: color 400ms;
+        transition: color 400ms; }
       .main-nav ul li a:hover {
-        text-decoration: none; }
+        text-decoration: none;
+        color: #FDE3C7; }
 
 .main-nav-mobile {
   background-color: #093341;
@@ -10885,6 +10888,39 @@ ul {
   background-color: #f9e3d6;
   background-position: center -10vh;
   background-repeat: no-repeat; }
+
+.goto-top {
+  position: fixed;
+  bottom: 0;
+  z-index: 99;
+  right: 0;
+  background-color: #f9e3d6;
+  margin: 20px;
+  border-radius: 100px;
+  -webkit-transition: background-color 300ms;
+  transition: background-color 300ms; }
+  .goto-top a {
+    color: #093341;
+    display: block;
+    -webkit-transition: color 300ms;
+    transition: color 300ms; }
+    @media (max-width: 575px) {
+      .goto-top a {
+        padding: 7px 10px; } }
+    @media (min-width: 576px) {
+      .goto-top a {
+        padding: 15px 20px; } }
+  @media (max-width: 575px) {
+    .goto-top i {
+      font-size: 20px; } }
+  @media (min-width: 576px) {
+    .goto-top i {
+      font-size: 32px; } }
+
+.goto-top:hover {
+  background-color: #093341; }
+  .goto-top:hover a {
+    color: #f9e3d6; }
 
 .alt-bg {
   background-color: #F9E3D6; }

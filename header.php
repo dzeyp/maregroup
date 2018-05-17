@@ -20,9 +20,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<meta name="apple-mobile-web-app-title" content="<?php bloginfo( 'name' ); ?> - <?php bloginfo( 'description' ); ?>">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-	<link href="https://fonts.googleapis.com/css?family=Merriweather:400,700|Oswald:600" rel="stylesheet">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700|Oswald:600" rel="stylesheet"> -->
+	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Poppins" rel="stylesheet"> 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
-	<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/smooth-scroll/dist/js/smooth-scroll.js"></script>
+	<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/smooth-scroll/src/js/smooth-scroll.js"></script>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.6/css/swiper.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.6/js/swiper.min.js"></script>
 	<?php wp_head(); ?>
 </head>
 
@@ -39,7 +43,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							<li><a data-scroll href="#about">ABOUT US</a></li>
 						</ul>
 					</div>
-					<div class="col-2 text-center">
+					<div class="col-2 text-center logo">
 						<h1 style="margin:0">MARE<br>GROUP</h1>
 					</div>
 					<div class="col-5">
@@ -53,7 +57,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		</div>
 
 		<div class="row main-nav-mobile d-md-none">
-			<div class="col-6">
+			<div class="col-6 logo">
 				<h1 style="margin:0">MARE<br>GROUP</h1>
 			</div>
 			<div class="col-6 text-right">

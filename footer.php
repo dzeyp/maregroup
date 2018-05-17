@@ -33,6 +33,12 @@
 
 <script>
 	var scroll = new SmoothScroll('a[href*="#"]');
+
+	var mySwiper = new Swiper ('.swiper-container', {
+		loop: true,
+		autoplay: true,
+		effect: 'fade',
+	})
 </script>
 
 </body>

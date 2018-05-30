@@ -1,16 +1,16 @@
 body {
 	background-color: #fff;
-	color: #0a0a0a;
-	font-family: 'Poppins', sans-serif;
-	font-size: 15px;
+	color: #000;
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
 	line-height: 25px;
-	font-weight: 400;
+	font-weight: 100;
 	letter-spacing: 0px;
 }
 
 h1 {
-	font-family: 'Libre Baskerville', serif;
-	margin: 0 0 60px 0;
+	font-family: 'Roboto', sans-serif;
+	margin: 0 0 20px 0;
 	font-size: 36px;
 	line-height: 44px;
 	font-weight: 400;
@@ -18,7 +18,7 @@ h1 {
 }
 
 p {
-	margin: 0 0 40px 0;
+	margin: 0 0 20px 0;
 }
 
 ul {
@@ -32,6 +32,19 @@ ul {
 	font-size: 20px;
 }
 
+a {
+	color: #0a0a0a;
+	padding: 5px 10px;
+	border: 1px solid rgba(9,51,65,0);
+	transition: border 400ms;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #0a0a0a;
+	//background-color: rgba(9,51,65,.6);
+	border: 1px solid rgba(9,51,65,1);
+}
 
 
 
@@ -58,7 +71,7 @@ ul {
 				color: #fff;
 				padding: 20px;
 				transition: color 400ms;
-				font-family: 'Libre Baskerville', serif;
+				font-family: 'Roboto', sans-serif;
 				font-size: 12px;
 			}
 
@@ -125,7 +138,6 @@ ul {
 				margin-bottom: 20px;
 				color: #fff;
 				font-size: 60px;
-				font-weight: 700;
 
 				@media (max-width: 767px) {
 					font-size: 40px;
@@ -150,6 +162,7 @@ ul {
 			a:hover {
 				color: #FDE3C7;
 				text-decoration: none;
+				border: 1px solid rgba(9,51,65,0);
 			}
 		}
 	}
@@ -159,11 +172,11 @@ ul {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 80vh;
+	height: 75vh;
 }
 
 .content {
-	padding: 80px 0;
+	padding: 40px 0;
 }
 
 .content-alt {
@@ -204,9 +217,13 @@ ul {
 	.bg {
 		position: absolute;
 		background-color: transparent;
-		background-position: bottom center;
+		background-position: center;
 		background-repeat: no-repeat;
-		top: 8%;
+		top: 0;
+
+		@media (max-width: 575px) {
+			background-size: 95%;
+		}
 
 		.col-12 {
 			visibility: hidden;
@@ -231,10 +248,10 @@ ul {
 }
 
 .post-footer {
-	height: 50vh;
-	background-color: #f9e3d6;
-	background-position: center -10vh;
+	background-position: center;
 	background-repeat: no-repeat;
+	background-size: cover;
+	height: 50vh;
 }
 
 .goto-top {
@@ -279,6 +296,7 @@ ul {
 
 	a {
 		color: #093341;
+		border: 1px solid rgba(9,51,65,0) !important;
 	}
 }
 
@@ -290,4 +308,13 @@ ul {
 
 .no-padding {
 	
+}
+
+.parent-vc {
+	display: table;
+}
+
+.child-vc {
+    display: table-cell;
+    vertical-align: middle;
 }

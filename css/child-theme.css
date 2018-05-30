@@ -10774,23 +10774,23 @@ a.skip-link {
 
 body {
   background-color: #fff;
-  color: #0a0a0a;
-  font-family: 'Poppins', sans-serif;
-  font-size: 15px;
+  color: #000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
   line-height: 25px;
-  font-weight: 400;
+  font-weight: 100;
   letter-spacing: 0px; }
 
 h1 {
-  font-family: 'Libre Baskerville', serif;
-  margin: 0 0 60px 0;
+  font-family: 'Roboto', sans-serif;
+  margin: 0 0 20px 0;
   font-size: 36px;
   line-height: 44px;
   font-weight: 400;
   letter-spacing: 0px; }
 
 p {
-  margin: 0 0 40px 0; }
+  margin: 0 0 20px 0; }
 
 ul {
   margin: 0;
@@ -10800,6 +10800,18 @@ ul {
 .logo h1 {
   line-height: initial;
   font-size: 20px; }
+
+a {
+  color: #0a0a0a;
+  padding: 5px 10px;
+  border: 1px solid rgba(9, 51, 65, 0);
+  -webkit-transition: border 400ms;
+  transition: border 400ms; }
+
+a:hover {
+  text-decoration: none;
+  color: #0a0a0a;
+  border: 1px solid #093341; }
 
 .container-fluid .limit {
   max-width: 1140px;
@@ -10819,7 +10831,7 @@ ul {
         padding: 20px;
         -webkit-transition: color 400ms;
         transition: color 400ms;
-        font-family: 'Libre Baskerville', serif;
+        font-family: 'Roboto', sans-serif;
         font-size: 12px; }
       .main-nav ul li a:hover {
         text-decoration: none;
@@ -10861,8 +10873,7 @@ ul {
     .slider .swiper-slide .text-holder h1 {
       margin-bottom: 20px;
       color: #fff;
-      font-size: 60px;
-      font-weight: 700; }
+      font-size: 60px; }
       @media (max-width: 767px) {
         .slider .swiper-slide .text-holder h1 {
           font-size: 40px; } }
@@ -10877,16 +10888,17 @@ ul {
         font-size: 24px; }
     .slider .swiper-slide .text-holder a:hover {
       color: #FDE3C7;
-      text-decoration: none; }
+      text-decoration: none;
+      border: 1px solid rgba(9, 51, 65, 0); }
 
 .slider-alt {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 80vh; }
+  height: 75vh; }
 
 .content {
-  padding: 80px 0; }
+  padding: 40px 0; }
 
 .content-alt {
   background-color: transparent;
@@ -10915,9 +10927,12 @@ ul {
   .content-alt .bg {
     position: absolute;
     background-color: transparent;
-    background-position: bottom center;
+    background-position: center;
     background-repeat: no-repeat;
-    top: 8%; }
+    top: 0; }
+    @media (max-width: 575px) {
+      .content-alt .bg {
+        background-size: 95%; } }
     .content-alt .bg .col-12 {
       visibility: hidden; }
     .content-alt .bg h4 {
@@ -10933,10 +10948,10 @@ ul {
     margin-bottom: 40px; }
 
 .post-footer {
-  height: 50vh;
-  background-color: #f9e3d6;
-  background-position: center -10vh;
-  background-repeat: no-repeat; }
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh; }
 
 .goto-top {
   position: fixed;
@@ -10969,7 +10984,15 @@ ul {
 .goto-top:hover {
   background-color: #f9e3d6; }
   .goto-top:hover a {
-    color: #093341; }
+    color: #093341;
+    border: 1px solid rgba(9, 51, 65, 0) !important; }
 
 .alt-bg {
   background-color: #F9E3D6; }
+
+.parent-vc {
+  display: table; }
+
+.child-vc {
+  display: table-cell;
+  vertical-align: middle; }
